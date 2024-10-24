@@ -1,8 +1,6 @@
-import React, { ReactEventHandler, ReactNode, useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import {Send} from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism"
 import { ChatSession, GenerativeModel, GoogleGenerativeAI } from '@google/generative-ai'
 const genAi = new GoogleGenerativeAI("AIzaSyC5kOlabvOg3lD_VH1gmhqV-CJ2Nlc5E6E")
 const model = genAi.getGenerativeModel({ model: "gemini-1.5-pro" })
